@@ -1,0 +1,38 @@
+!!! 5
+
+/[if lt IE 7]
+    <html class="no-js ie6 ie9-and-less ie8-and-less ie7-and-less" lang="en">
+
+/[if IE 7]
+    <html class="no-js ie7 ie9-and-less ie8-and-less ie7-and-less" lang="en">
+
+/[if IE 8]
+    <html class="no-js ie8 ie9-and-less ie8-and-less" lang="en">
+
+/[if IE 9]
+    <html class="no-js ie9 ie9-and-less" lang="en">
+
+/[if gt IE 9]
+    <html class="no-js" lang="en">
+
+%head
+    %meta{"charset": "UTF-8"}
+    %meta{"name": "author", "content": "Vaporware, Inc."}
+    
+    %title
+        - block page_title
+            = title
+            | Vaporware
+
+    %link{"rel": "SHORTCUT ICON", "href": "{{ STATIC_URL }}/favicon.ico", "type": "image/x-icon"}
+    %link{"href": "{{ STATIC_URL }}/css/bootstrap.css", "rel": "stylesheet", "type": "text/css" }
+
+    - block base_head
+
+<body class="guide_app {% block body_classes %}{{ body_css_classes }}{% endblock %}">
+
+    .page
+        - block base_body
+            - block content
+
+            - block footer

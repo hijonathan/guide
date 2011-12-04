@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+    <html class="no-js ie6 ie9-and-less ie8-and-less ie7-and-less" lang="en">
+<![endif]--><!--[if IE 7]>
+    <html class="no-js ie7 ie9-and-less ie8-and-less ie7-and-less" lang="en">
+<![endif]--><!--[if IE 8]>
+    <html class="no-js ie8 ie9-and-less ie8-and-less" lang="en">
+<![endif]--><!--[if IE 9]>
+    <html class="no-js ie9 ie9-and-less" lang="en">
+<![endif]--><!--[if gt IE 9]>
+    <html class="no-js" lang="en">
+<![endif]--><head>
+    <meta charset='UTF-8' />
+    <meta content='Vaporware, Inc.' name='author' />
+    <title>
+        {% block page_title %}
+            {{ title }}
+            | Vaporware
+        {% endblock %}
+    </title>
+    <link href='{{ STATIC_URL }}/favicon.ico' type='image/x-icon' rel='SHORTCUT ICON' />
+    <link href='{{ STATIC_URL }}/css/bootstrap.css' type='text/css' rel='stylesheet' />
+    {% block base_head %}
+    {% endblock %}
+</head>
+<body class="guide_app {% block body_classes %}{{ body_css_classes }}{% endblock %}">
+    <div class='page'>
+        {% block base_body %}
+            {% block content %}
+            {% endblock %}
+            {% block footer %}
+            {% endblock %}
+        {% endblock %}
+    </div>

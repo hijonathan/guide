@@ -1,0 +1,39 @@
+- extends "layouts/base_no_nav.html"
+
+- block navigation
+    .navbar.navbar-fixed{"data-scrollspy": "scrollspy"}
+        .navbar{"data-dropdown": "dropdown"}
+            .navbar-inner
+                .fluid-container
+                    %a.brand{"href": "#"} Project Name
+                    %ul.nav
+                        %li.active
+                            %a{"href": "#"} Home
+                        %li
+                            %a{"href": "#"} Link
+                        %li
+                            %a{"href": "#"} Link
+                        %li.dropdown
+                            %a.dropdown-toggle{"href": "#"} Dropdown
+                            %ul.dropdown-menu
+                                %li
+                                    %a{"href": "#"} Secondary Link
+                                %li.divider
+                                %li
+                                    %a{"href": "#"} Secondary Link
+
+                    %form.form-search.navbar-search.pull-left{"action": ""}
+                        %input.search-query.span2{"type": "text", "placeholder": "Search"}
+
+                    %ul.nav.secondary-nav
+                        %li.dropdown
+                            %a.dropdown-toggle{"href": "#"} Dropdown
+                            %ul.dropdown-menu
+                                %li
+                                    %a{"href": "#"} Secondary Link
+                                %li.divider
+                                %li
+                                    %a{"href": "#"} Secondary Link
+
+- block footer
+- include "layouts/footer.html"

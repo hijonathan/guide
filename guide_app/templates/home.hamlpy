@@ -1,0 +1,18 @@
+- extends "layouts/base.html"
+
+- block head
+    %script{"src": "{{ STATIC_URL }}/js/main.js"}
+    %link{"href": "{{ STATIC_URL }}/css/guide.css", "rel": "stylesheet", "type": "text/css"}
+
+-block content
+
+    .fluid-container
+        .fluid-sidebar-left
+            %h1 Guider App
+
+            .dom-selections
+                %ul
+
+        .fluid-content
+            
+            %iframe{"name": "result", "frameborder": "0", "src": "http://fiddle.jshell.net/2PCD2/1/show/"}

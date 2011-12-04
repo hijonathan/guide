@@ -1,0 +1,55 @@
+{% extends "layouts/base_no_nav.html" %}
+{% block navigation %}
+    <div class='navbar navbar-fixed' data-scrollspy='scrollspy'>
+        <div class='navbar' data-dropdown='dropdown'>
+            <div class='navbar-inner'>
+                <div class='fluid-container'>
+                    <a class='brand' href='#'>Project Name</a>
+                    <ul class='nav'>
+                        <li class='active'>
+                            <a href='#'>Home</a>
+                        </li>
+                        <li>
+                            <a href='#'>Link</a>
+                        </li>
+                        <li>
+                            <a href='#'>Link</a>
+                        </li>
+                        <li class='dropdown'>
+                            <a class='dropdown-toggle' href='#'>Dropdown</a>
+                            <ul class='dropdown-menu'>
+                                <li>
+                                    <a href='#'>Secondary Link</a>
+                                </li>
+                                <li class='divider'></li>
+                                <li>
+                                    <a href='#'>Secondary Link</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class='form-search navbar-search pull-left' action=''>
+                        <input class='search-query span2' placeholder='Search' type='text' />
+                    </form>
+                    <ul class='nav secondary-nav'>
+                        <li class='dropdown'>
+                            <a class='dropdown-toggle' href='#'>Dropdown</a>
+                            <ul class='dropdown-menu'>
+                                <li>
+                                    <a href='#'>Secondary Link</a>
+                                </li>
+                                <li class='divider'></li>
+                                <li>
+                                    <a href='#'>Secondary Link</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+{% block footer %}
+{% endblock %}
+{% include "layouts/footer.html" %}

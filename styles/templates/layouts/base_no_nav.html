@@ -1,0 +1,15 @@
+{% extends "layouts/base_plain.html" %}
+{% block base_head %}
+    {% block head %}
+    {% endblock %}
+    <script src='{{ STATIC_URL }}/js/common/modernizr/modernizr-2.0.6-custom.js'></script>
+{% endblock %}
+{% block base_body %}
+    {% block navigation %}
+    {% endblock %}
+    {% block content %}
+    {% endblock %}
+    {% block footer %}
+    {% endblock %}
+    {% include "layouts/js/jquery.html" %}
+{% endblock %}

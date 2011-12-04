@@ -1,0 +1,18 @@
+{% extends "layouts/base.html" %}
+{% block head %}
+    <script src='{{ STATIC_URL }}/js/main.js'></script>
+    <link href='{{ STATIC_URL }}/css/guide.css' type='text/css' rel='stylesheet' />
+{% endblock %}
+{% block content %}
+    <div class='fluid-container'>
+        <div class='fluid-sidebar-left'>
+            <h1>Guider App</h1>
+            <div class='dom-selections'>
+                <ul></ul>
+            </div>
+        </div>
+        <div class='fluid-content'>
+            <iframe src='http://fiddle.jshell.net/2PCD2/1/show/' name='result' frameborder='0'></iframe>
+        </div>
+    </div>
+{% endblock %}

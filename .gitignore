@@ -1,0 +1,5 @@
+.scss-cache
+.sass-cache
+*.pyc
+.DS_Store
+/static
